@@ -8,7 +8,20 @@ function createRandomMove() {
 
 function displaymove(playermove, computermove) {
     const playermoveresult = document.querySelector("#playermove");
-    const computerMoveresult = document.querySelector("#computermove");
+    const computermoveresult = document.querySelector("#computermove");
     playermoveresult.innerHTML = playermove;
     computermoveresult.innerHTML = computermove;
+}
+
+function displayresult(playermove, computermove) {
+    const resultdisplay = document.querySelector("#result");
+
+    if(playermove === computermove) resultdisplay.innerHTML = 'Draw.';
+    else if(playermove === "paper" 
+            && computermove === "scissors") resultdisplay.innerHTML = 'You lost.';
+    else if(playermove === "rock" 
+            && computermove === "paper") resultdisplay.innerHTML = 'You lost.';
+    else if(playermove === "scissors" 
+            && computermove === "rock") resultdisplay.innerHTML = 'You lost.';
+    else resultdisplay.innerHTML = "You Won."
 }
