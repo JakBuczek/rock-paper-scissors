@@ -16,12 +16,27 @@ function displaymove(playermove, computermove) {
 function displayresult(playermove, computermove) {
     const resultdisplay = document.querySelector("#result");
 
-    if(playermove === computermove) resultdisplay.innerHTML = 'Draw.';
+    if(playermove === computermove) {
+        resultdisplay.style.color = "blue";
+        resultdisplay.innerHTML = 'Draw.';
+    }
     else if(playermove === "paper" 
-            && computermove === "scissors") resultdisplay.innerHTML = 'You lost.';
+            && computermove === "scissors") {
+        resultdisplay.style.color = "red";
+        resultdisplay.innerHTML = 'You lost.';
+    }
     else if(playermove === "rock" 
-            && computermove === "paper") resultdisplay.innerHTML = 'You lost.';
+            && computermove === "paper") {
+                resultdisplay.style.color = "red";
+                resultdisplay.innerHTML = 'You lost.';
+    }
     else if(playermove === "scissors" 
-            && computermove === "rock") resultdisplay.innerHTML = 'You lost.';
-    else resultdisplay.innerHTML = "You Won."
+            && computermove === "rock") {
+                resultdisplay.style.color = "red";
+                resultdisplay.innerHTML = 'You lost.';
+    }
+    else {
+    resultdisplay.style.color = "green";
+    resultdisplay.innerHTML = "You Won."
+    }
 }
