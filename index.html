@@ -6,24 +6,29 @@
         <title></title>
     </head>
     <body>
+        <main class="page">
+            <section class="page__header">
         <h1>Rock, paper, scissors</h1>
-        <h3>Choose your move</h3>
-        <div class="moves">
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissors">Scissors</button>
-        </div>
-        <div class="result">
-            <div>
-                <span>Player move:</span>
+            </section>
+            <section class="page__moves">
+                <h3 class="page__moves-title">Choose your move</h3>
+                    <div class="page__moves-icons">
+                        <button class="icon" id="rock">Rock</button>
+                        <button class="icon" id="paper">Paper</button>
+                        <button class="icon" id="scissors">Scissors</button>
+                    </div>
+            </section>
+        <section class="pages__result">
+            <div class="pages__result-icons">
                 <span id="playermove">Rock</span>
-            </div>
-            <div>
-                <span>Computer move:</span>
                 <span id="computermove">Paper</span>
             </div>
-            <div id="result">You won.</div>
-        </div>
+            <div class="pages__result-subtitle">
+                <div id="result"></div>
+                <button class="pages__result-restart">Play again</button>
+            </div>
+        </section>
+        </main>
         <script src='./functions.js'>
         </script>
         <script src='./script.js'>
