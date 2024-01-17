@@ -1,3 +1,48 @@
-.result{
-    margin: 20px 0;
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+button {
+    border: o;
+    background-color: inherit;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+    border: 8px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.page {
+    width: 50%;
+    margin: 80px auto;
+}
+
+.page__moves-title, .page__header {
+    text-align: center;
+}
+
+.pages__result-subtitle {
+    text-align: center;
+}
+
+.result__des h3 {
+  text-align: center;
+  width: 100%;
 }

@@ -9,8 +9,8 @@ function createRandomMove() {
 function displaymove(playermove, computermove) {
     const playermoveresult = document.querySelector("#playermove");
     const computermoveresult = document.querySelector("#computermove");
-    playermoveresult.innerHTML = playermove;
-    computermoveresult.innerHTML = computermove;
+    playermoveresult.innerHTML = `<span class="fa-regular fa-hand-${playermove}"></span>`;
+    computermoveresult.innerHTML = `<span class="fa-regular fa-hand-${computermove}"></span>`;
 }
 
 function displayresult(playermove, computermove) {
