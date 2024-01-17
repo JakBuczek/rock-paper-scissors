@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <script src="https://kit.fontawesome.com/ab3a8a1c95.js" crossorigin="anonymous"></script>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./style.css"/>
         <title></title>
@@ -12,20 +13,23 @@
             </section>
             <section class="page__moves">
                 <h3 class="page__moves-title">Choose your move</h3>
-                    <div class="page__moves-icons">
-                        <button class="icon" id="rock">Rock</button>
-                        <button class="icon" id="paper">Paper</button>
-                        <button class="icon" id="scissors">Scissors</button>
+                    <div class="page__moves-icons wrapper">
+                        <button class="icon" id="rock"><i class="fa-regular fa-hand-rock"></i></button>
+                        <button class="icon" id="paper"><i class="fa-regular fa-hand"></i></button>
+                        <button class="icon" id="scissors"><i class="fa-regular fa-hand-scissors"></i></button>
                     </div>
             </section>
-        <section class="page__result">
-            <div class="page__result-icons">
-                <span id="playermove">Rock</span>
-                <span id="computermove">Paper</span>
+        <section class="pages__result">
+            <div class="result__des wrapper">
+            <h3>You</h3>
+            <h3>Opponent</h3>
             </div>
-            <div class="page__result-subtitels">
-                <div id="result"></div>
-                <button class="page__result-restart">Play again</button>
+            <div class="pages__result-icons wrapper">
+                <span class="icon" id="playermove"></span>
+                <span class="icon" id="computermove"></span>
+            </div>
+            <div class="pages__result-subtitle">
+                <h3 id="result"></h3>
             </div>
         </section>
         </main>
